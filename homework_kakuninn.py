@@ -28,4 +28,15 @@ def check_warikan():
     else:
         print("なんかおかしいぞ!")
 
+def check_warikan2():
+    result = warikan(2000, 3) == "1人あたり: 666円, 端数:2円"
+
+
+    if result:
+        print("OK!")
+    else:
+        print("なんかおかしいぞ")
+
 check_warikan()
+check_warikan2()
+
