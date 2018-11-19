@@ -1,4 +1,4 @@
-def warikan (amount, number_of_people):
+def warikan(amount, number_of_people):
     quotient = amount // number_of_people
     remainder = amount % number_of_people
 
@@ -11,18 +11,12 @@ def check_warikan():
         (2000, 3, "1人あたり: 666円, 端数: 2円"),
     ]
 
-
-
     for p in parameters:
-        amount = p[0]    #0は1500､2000
+        amount = p[0]  # 0は1500､2000
         number_of_people = p[1]
         expected = p[2]
 
-
-        result = expected == warikan(amount, number_of_people)
-
-
-        if result:
+        if expected == warikan(amount, number_of_people):
             print("OK")
         else:
             print("なにかがおかしいよん")
